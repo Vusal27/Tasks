@@ -9,7 +9,7 @@ var ghPages = require('gulp-gh-pages');
 
 //Пути
 const paths = {
-    root: './dist',
+    root: 'dist/**/*',
     styles: {
       src: "src/styles/main.scss",
       watch: "src/styles/**/*.scss",
