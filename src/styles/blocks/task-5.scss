@@ -1,0 +1,23 @@
+.wrapper_5 {
+    width: 100%;
+    display: flex;
+    padding-top: 100px; 
+    @include laptop() {
+        flex-flow: column-reverse;
+
+    }
+}
+.adaptive {
+    height: 200px;
+    flex: 1;
+    background-color: red;
+    &_second {
+        background-color: yellow;
+        @include laptop() {
+            display: none;
+        }
+    }
+    &_third {
+        background-color: blue;
+    }
+}
